@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palet RGB</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <div class="hsl-tbox">
+    <div class="branding-here">
+        <div class="branding-logo">
+            <img src="gw3-light.svg" class="branding">
+        </div>
+        <div style="margin-top: 10px;margin-bottom: 10px ;"></div>
+        <span>HSL Palette Generator</span>
+    </div>
+    <div class="hsl-square">
+
+    </div>
+    <form class="form-list">
+        <div class="input-control">
+            <label for="hsl-result" class="form-label">
+                
+            </label>
+            <input type="hidden" class="hsl-result">
+        </div>
+        <div class="input-control">
+            <label for="hsl-hue" class="form-label">H</label>
+            <input type="range" min="0" max="360" class="form-range" id="hsl-hue" step="1">
+            <span class="hsl-hue-span">-</span>
+        </div>
+        <div class="input-control">
+            <label for="hsl-sat" class="form-label">S</label>
+            <input type="range" min="0" max="100" class="form-range" id="hsl-sat" step="1">
+            <span class="hsl-sat-span">-</span>
+        </div>
+        <div class="input-control">
+            <label for="hsl-light" class="form-label">L</label>
+            <input type="range" min="0" max="100" class="form-range" id="hsl-light" step="1">
+            <span class="hsl-light-span">-</span>
+        </div>
+        
+        <button type="button" class="copy-btn">Salin</button>
+        <button type="button" class="randomize-btn" onmouseover="btnRdm_hover(true)" onmouseout="btnRdm_hover(false)">Acak</button>
+    </form>
+   </div>
+    <script src="main.js"></script>
+</body>
+</html>
